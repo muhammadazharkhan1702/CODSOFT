@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    width: 110%;
+    height: 110%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+header{
+    position: absolute;
+    width: 400%;
+    top: 0;
+    bottom: 90%;
+    right: 0;
+    left: 30%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px,15%;
+    background: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px 20px;
+        margin: 0 5px;
+        color: #f5f5f5;
+        transition: all .45s ease;
+        border-radius: 5px;
+}
+
+.navbar a:hover{
+    background:#d53c3ce1;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 31%, 94%, 0.789);
+    background-size: cover;
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1626908013351-800ddd734b8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80);
+    
+}
+#part1{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1778&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(340, 7%, 33%, 0.358);
+}
+#text-div{
+    position: absolute;
+    width: 400px;
+    left: 6%;
+    top: 50%;
+}
+#text-div h1{
+    font-size: 80px;
+    font-family:sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 70px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 80%;
+    padding: 5px 5px;
+    margin: 5 0px;
+    color: #f5f5f5;
+    transition: all .45s ease;
+    border-radius: 0px;
+    
+}
+#text-div h1:hover{
+background:#db0000e1;
+}
+
+#text-div h2{
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: 30px;
+    color: white;
+    text-transform: uppercase;
+    opacity: 50%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+}
