@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container"></div>
+    <nav>
+        <img src="Images/logo.png.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Graphics Designer</p>
+        <h1>Hey, I'am Muhammad<br><span>Azhar</span> Khan.</h1>
+    </div>
+</div>
+<!----------------------about------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/About.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P>Hello, I'm Muhammad Azhar Khan, a passionate graphic designer. I have a deep appreciation for the art of visual communication and a strong desire to bring creative ideas to life through design. With a background in graphic design and a commitment to staying current with the latest design trends and software, I am dedicated to delivering visually stunning and effective solutions to my clients. Whether it's crafting eye-catching logos, designing captivating marketing materials, or creating memorable brand identities, I take pride in my work and strive to make every project a masterpiece. I look forward to collaborating with you to turn your vision into reality through the power of design</P>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Graphics Designer</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Working as a Graphics Designer at LVE Innovations</li>
+                        <li><span>2022</span><br>Internship at Puli Space Technologies Budapest.</li>
+                        <li><span>2020</span><br>Worked as a Graphics Designer at PageBites, Inc</li> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - Current</span><br>Bachelor of Technology (Computer Science Engineering at Integral University</li>
+                        <li><span>2018-2021</span><br>Diploma in Computer Science Engineering at Integral University</li>
+                        <li><span>2015</span><br>High School from St.Xaviers School Basti.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------Projects------------------------------------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Landing Page</h2>
+                <p>Virtual reality landing webpage using HTML,CSS</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+            <i class="fa-solid fa-calculator"></i>
+            <h2>Calculator Webpage</h2>
+            <p>Basic Calculator using HTML,CSS</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+</div>
+
+<!---------------------------Projects---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Work1.png">
+                <div class="layer">
+                    <h3>Virtual Reality Landing Page</h3>
+                    <p>Virtual reality simple landing page using HTML,CSS</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Work2.png">
+                    <div class="layer">
+                    <h3>Calculator webpage</h3>
+                    <p>Calculator webpage using HTML,CSS and Javascript.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script> 
+</body>
+</html>
